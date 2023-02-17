@@ -1,0 +1,78 @@
+.container {
+    background-color: #fff;
+    color: red;
+}
+
+
+.login_wrapper {
+    background-color: whitesmoke;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;  
+}
+
+.login_flex {
+    background-color: #fff;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 25px auto;
+    padding: 20px;
+    width: 30%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+.new_account{
+    background-color: #fff;
+    color: black;
+    font-size: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 30%;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+}
+
+.img_div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signIn {
+    width: 100%;
+}
+
+.sign_field {
+    margin: 20px 10px;
+}
+
+.forget_password {
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 10px;
+    color: #0366d6;
+    font-size: 15px;
+}
+.create_link{
+    text-decoration: none;
+    color: #0366d6;
+    margin-left: 10px;
+}
+@media (max-width : 850px) {
+    .new_account{
+        flex-direction: column;
+    }
+    
+}

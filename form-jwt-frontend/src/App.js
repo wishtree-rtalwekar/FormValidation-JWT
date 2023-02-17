@@ -1,10 +1,13 @@
-import './App.css';
-import MainPage from './component/mainPage/MainPage';
+
+import { BrowserRouter, Routes, Route, useNavigate } from "react-router-dom";
+import { useEffect } from 'react';
+import NavBar from "./component/navBar/NavBar";
 
 function App() {
+
   return (
-    <div className="App">
-      <MainPage />
+    <div className="App">    
+        <NavBar />
     </div>
   );
 }
