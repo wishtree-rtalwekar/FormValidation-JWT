@@ -131,6 +131,9 @@ code {
   top: 0;
 
 }
+.danger{
+  color: red !important;
+}
 .main_navbar_link {
   color: whitesmoke !important;
   font-size: inherit;
