@@ -85,7 +85,7 @@ const RegisterPage = (props) => {
             <div className='login_flex'>
                 <div className='img_div' >
                     <img src={git_img} style={{ width: "80px", height: "80px" }} />
-                    <h2 className={message ? "heading_2 danger" : "heading_2"}>{message ? message : "Register"}</h2>
+                    <h2 className="heading_2">{message ? message : "Register"}</h2>
                 </div>
                 <div style={{ width: "95%" }}>
                     <hr />
