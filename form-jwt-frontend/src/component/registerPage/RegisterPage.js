@@ -12,9 +12,8 @@ import { schema } from '../validations/validations';
 import AuthService from "../../services/auth.service";
 
 const RegisterPage = (props) => {
-    const { register, handleSubmit, formState: { errors }, reset } = useForm({ resolver: yupResolver(schema), });
+    const { register, handleSubmit, formState: { errors } } = useForm({ resolver: yupResolver(schema), });
     const [showPassword, setShowPassword] = useState(false);
-    const [signUp, setSignUp] = useState(false);
 
     const [formData, setFormData] = useState({
         firstName: "",
@@ -142,12 +141,11 @@ const RegisterPage = (props) => {
                                         labelId="demo-simple-select-label"
                                         id="demo-simple-select"
                                         label="Role"
-                                        // value={formData.roles}
                                         {...register("role")}
                                         onChange={handleRoleChange}
                                     >
-                                        {roles.map((role, index) =>
-                                            <MenuItem key={index} value={role}>{role.charAt(0).toUpperCase() + role.slice(1)}</MenuItem>
+                                        {roles.map((role) =>
+                                            <MenuItem key={role} value={role}>{role.charAt(0).toUpperCase() + role.slice(1)}</MenuItem>
                                         )}
                                     </Select>
                                 </FormControl>

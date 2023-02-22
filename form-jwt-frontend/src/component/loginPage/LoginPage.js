@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import symfony_img from "../../assests/symfony-new-logo.jpg";
 import git_img from "../../assests/gitLogo.jpeg";
 import TextField from '@mui/material/TextField';
 import Button from '@mui/material/Button';
@@ -13,9 +12,8 @@ import { login_schema } from '../validations/validations';
 import AuthService from '../../services/auth.service';
 
 const LoginPage = () => {
-    const { register, handleSubmit, formState: { errors }, reset } = useForm({ resolver: yupResolver(login_schema), });
+    const { register, handleSubmit, formState: { errors } } = useForm({ resolver: yupResolver(login_schema), });
     const [showPassword, setShowPassword] = useState(false);
-    const [signUp, setSignUp] = useState(false);
     const [loginData, setLoginData] = useState({
         email: "",
         password: ""
@@ -32,9 +30,6 @@ const LoginPage = () => {
     const handleMouseDownPassword = (event) => {
         event.preventDefault();
     };
-    const onSubmit = () => {
-
-    }
     const handleSubmitBtn = (data) => {
         console.log("Data", data);
         console.log("LoginData", loginData)
